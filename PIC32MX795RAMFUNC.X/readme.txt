@@ -16,4 +16,5 @@ kseg1_data_mem (w!x) : ORIGIN = 0xA0000000, LENGTH = 0x4000
 _bmxdudba_address = __BMXDRMSZ; /* LENGTH(kseg1_data_mem) ; */
 _bmxdupba_address = __BMXDRMSZ; /* LENGTH(kseg1_data_mem) ; */
 
+ Anything after 0x4000 will be used for Kernel Program, you can search for RAMFUNC in the map file for the exact start address of Kernel Program.
  
